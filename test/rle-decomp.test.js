@@ -16,7 +16,7 @@ describe("RLE decompression test", function () {
     })
 
     it("returns correct value for string 3A2B1C4D", function () {
-        const result = textProcessor("rle", false, "AAABBCDDDD");
+        const result = textProcessor("rle", false, "3A2B1C4D");
         assert.strictEqual(result, "AAABBCDDDD");
     });
 
