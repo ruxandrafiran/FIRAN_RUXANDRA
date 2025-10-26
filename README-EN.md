@@ -16,10 +16,10 @@
     - functionality
         - the algorithm compresses/decompresses a string primitive or a String object
         - RLE compression involves transforming a string into another string
-        - consecutive characters are replaced with a single character followed by the number of occurrences (example: `aaaavvvssss` will become `a4v3s4`)
+        - consecutive characters are replaced with the number of occurrences followed by a single character (example: `AAAAVVVSSSS` becomes `4A3V4S`)
     - validation
         - if the parameters are not string primitives/String objects or boolean, an exception will be thrown (`InvalidType`)
-        - if the input value contains numbers, an exception will be thrown (`InvalidInput`)
+        - if the input value contains numbers (compression) / incomplete values (decompression), an exception will be thrown (`InvalidInput`)
 
 - Caesar cipher implementation:
     - functionality

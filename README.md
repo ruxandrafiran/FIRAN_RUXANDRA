@@ -18,10 +18,10 @@
     - funcționalitate
         - algoritmul comprimă/decomprimă o primitivă string sau un obiect String
         - compresia RLE presupune transformarea unui string într-un alt string
-        - caracterele consecutive sunt înlocuite cu un singur caracter urmat de numărul de apariții (exemplu: `aaaavvvssss` va deveni `a4v3s4`)
+        - caracterele consecutive sunt înlocuite cu numărul de apariții urmat de un singur caracter (exemplu: `AAAAVVVSSSS` va deveni `4A3V4S`)
     - validare
         - dacă parametrii nu sunt primitive string sau obiecte String, respectiv boolean se va arunca o excepție (`InvalidType`)
-        - dacă valoarea de intrare conține numere se va arunca o excepție (`InvalidInput`)
+        - dacă valoarea de intrare conține valori numerice (compresie) / valori incomplete (decompresie) se va arunca o excepție (`InvalidInput`)
 
 - implementarea cifrului Caesar:
     - funcționalitate
