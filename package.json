@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "test": "jest --verbose --forceExit",
+    "test-app-0": "jest --silent=false --verbose --forceExit test/app-0.test.js",
+    "test-app-1": "jest --silent=false --verbose --forceExit test/app-1.test.js",
+    "test-app-2": "jest --silent=false --verbose --forceExit test/app-2.test.js",
+    "test-app-3": "jest --silent=false --verbose --forceExit test/app-3.test.js",
+    "test-app-4": "jest --silent=false --verbose --forceExit test/app-4.test.js",
+    "test-app-5": "jest --silent=false --verbose --forceExit test/app-5.test.js",
+    "test-app-6": "jest --silent=false --verbose --forceExit test/app-6.test.js",
+    "test-app-7": "jest --silent=false --verbose --forceExit test/app-7.test.js",
+    "test-app-8": "jest --silent=false --verbose --forceExit test/app-8.test.js",
+    "test-app-9": "jest --silent=false --verbose --forceExit test/app-9.test.js",
+    "test-app-10": "jest --silent=false --verbose --forceExit test/app-10.test.js",
+    "test-app-11": "jest --silent=false --verbose --forceExit test/app-11.test.js",
+    "test-app-12": "jest --silent=false --verbose --forceExit test/app-12.test.js",
+    "test-app-13": "jest --silent=false --verbose --forceExit test/app-13.test.js",
+    "test-app-14": "jest --silent=false --verbose --forceExit test/app-14.test.js",
+    "test-app-15": "jest --silent=false --verbose --forceExit test/app-15.test.js",
+    "test-app-16": "jest --silent=false --verbose --forceExit test/app-16.test.js",
+    "test-app-17": "jest --silent=false --verbose --forceExit test/app-17.test.js",
+    "test-app-18": "jest --silent=false --verbose --forceExit test/app-18.test.js",
+    "test-app-19": "jest --silent=false --verbose --forceExit test/app-19.test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}

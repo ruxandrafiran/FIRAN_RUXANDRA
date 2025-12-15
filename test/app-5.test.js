@@ -1,0 +1,26 @@
+const request = require("supertest");
+const app = require("../app");
+const { initDb } = require("../db");
+
+beforeEach(async () => {
+  // initDb should internally do sequelize.sync({ force: true })
+  await initDb();
+});
+
+describe("Restaurants API", () => {
+  test("A2 – POST /restaurants/:restaurantId/address with malformed body (missing properties)", async () => {
+    await request(app)
+      .post("/restaurants")
+      .send({ name: "La Bunica", rating: 4 });
+
+    const listRes = await request(app).get("/restaurants");
+    const restaurantId = listRes.body[0].id;
+
+    const res = await request(app)
+      .post(`/restaurants/${restaurantId}/address`)
+      .send({ street: "Str. Principala 1" }); // missing city
+
+    expect(res.statusCode).toBe(400);
+    expect(res.body).toEqual({ message: "malformed request" });
+  });
+});
